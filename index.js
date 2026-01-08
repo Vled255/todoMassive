@@ -38,8 +38,6 @@ function searchTodo(title) {
     todo.title.toLowerCase().includes(trackedSettings.search)
   );
   renderTodos(filtredTodos);
-
-  //   const input = document.getElementById("todoSearch");
 }
 
 function showAllTodos() {
@@ -60,7 +58,6 @@ function getTodo(id) {
 function toggleTodo(id) {
   const todo = getTodo(id);
   todo.completed = !todo.completed;
-  //   renderTodos();
 }
 
 function getLastId() {
@@ -95,10 +92,6 @@ function addTodoToMassive() {
 
   input.value = "";
   trackedSettings.newTodo = "";
-
-  const buttonAllTodos = getInputAllTodos();
-  //   buttonAllTodos.checked = true;
-
   renderTodos();
 }
 
